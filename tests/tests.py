@@ -1,12 +1,10 @@
 import unittest
 
-
 from sqlalchemy import create_engine, Column, types, select
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 from sqlalchemyp import get_sql
-
 
 Base = declarative_base()
 

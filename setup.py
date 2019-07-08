@@ -9,4 +9,4 @@ setup(name='sqlalchemyp',
       author_email='evangilo@gmail.com',
       packages=find_packages(exclude=('tests', 'docs', 'build')),
       install_requires=['sqlalchemy', 'sqlparse']
-)
+      )

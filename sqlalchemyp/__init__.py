@@ -5,7 +5,6 @@ import importlib
 import sqlparse
 from sqlalchemy import orm
 
-
 __all__ = ['print_sql', 'get_sql']
 
 
@@ -31,7 +30,7 @@ def get_sql(query, dialect):
 
     sql = statement.compile(
         dialect=db_dialect,
-	compile_kwargs={'literal_binds': True}
+        compile_kwargs={'literal_binds': True}
     )
     return sqlparse.format(str(sql), reindent=True)
 
