@@ -13,7 +13,7 @@ def _get_db_dialect(dialect):
     try:
         dialect = importlib.import_module(module_name)
     except ImportError:
-        raise ValueError('Unsuported dialect: {}'.format(dialect))
+        raise ValueError('Unsupported dialect: {}'.format(dialect))
     return dialect.dialect()
 
 
