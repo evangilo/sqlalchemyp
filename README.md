@@ -1,4 +1,4 @@
-# SQLAlchemy Print Query
+# Print SQLAlchemy query
 
 # Install
 `pip install sqlalchemyp`
