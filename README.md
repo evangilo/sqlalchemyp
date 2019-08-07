@@ -1,7 +1,7 @@
 # SQLAlchemy Print Query
 
 # Install
-`pip install git+https://github.com/evangilo/sqlalchemyp#egg=sqlalchemyp`
+`pip install sqlalchemyp`
 
 # Usage
 
