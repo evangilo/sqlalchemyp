@@ -1,4 +1,4 @@
-# Print SQLAlchemy query
+# SQLAlchemy Print Query
 
 [![Build Status](https://travis-ci.org/evangilo/sqlalchemyp.svg?branch=master)](https://travis-ci.org/evangilo/sqlalchemyp)
 [![PyPI version](https://badge.fury.io/py/sqlalchemyp.svg)](https://badge.fury.io/py/sqlalchemyp)

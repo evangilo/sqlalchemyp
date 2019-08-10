@@ -7,7 +7,7 @@ with open('README.md') as f:
 
 setup(name='sqlalchemyp',
       version='0.0.3',
-      description='Print SQLAlchemy query',
+      description='SQLAlchemy Print Query',
       long_description=readme,
       long_description_content_type='text/markdown',
       author='Evangilo',
