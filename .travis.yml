@@ -6,4 +6,4 @@ python:
 install:
   - pip install -e .
 script:
-  - python -m unittest -v tests/tests.py
+  - python tests/tests.py

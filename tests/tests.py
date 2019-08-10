@@ -23,9 +23,7 @@ class TestSQLAlchemyPrintQuery(unittest.TestCase):
                          get_sql(query, 'sqlite'))
 
     def test_get_sql_using_orm_query(self):
-        DBSession = sessionmaker(bind=create_engine('sqlite://'))
-        session = DBSession()
-
+        session = sessionmaker(bind=create_engine('sqlite://'))()
         query = session.query(Person)
         self.assertEqual('SELECT person.id,\n       person.name\nFROM person',
                          get_sql(query, 'sqlite'))
@@ -42,4 +40,4 @@ class TestSQLAlchemyPrintQuery(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(verbosity=2)
