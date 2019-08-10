@@ -6,7 +6,7 @@ with open('README.md') as f:
     readme = f.read()
 
 setup(name='sqlalchemyp',
-      version='0.0.3',
+      version='0.0.4',
       description='SQLAlchemy Print Query',
       long_description=readme,
       long_description_content_type='text/markdown',
