@@ -34,6 +34,12 @@ class TestSQLAlchemyPrintQuery(unittest.TestCase):
         with self.assertRaises(ValueError):
             get_sql(None, 'sqlite2')
 
+    def test_postgresql_as_default_dialect(self):
+        p = Person.__table__
+        query = select([p.c.id, p.c.name])
+        self.assertEquals('SELECT person.id,\n       person.name\nFROM person',
+                          get_sql(query))
+
 
 if __name__ == '__main__':
     unittest.main()

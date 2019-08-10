@@ -24,7 +24,7 @@ def _get_query_statement(query):
         return query
 
 
-def get_sql(query, dialect):
+def get_sql(query, dialect='postgresql'):
     statement = _get_query_statement(query)
     db_dialect = _get_db_dialect(dialect)
 
@@ -35,5 +35,5 @@ def get_sql(query, dialect):
     return sqlparse.format(str(sql), reindent=True)
 
 
-def print_sql(query, dialect):
+def print_sql(query, dialect='postgresql'):
     print('{sql};'.format(sql=get_sql(query, dialect)))
